@@ -1,0 +1,31 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Collaborative Text Editor</title>
+  <style>
+    #editor{
+        width:500px;
+        height:500px;
+    }
+  </style>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="editor"></div>
+  <div class="container">
+    <div class="editor-container">
+      <textarea id="editor" placeholder="Start typing here..."></textarea>
+    </div>
+    <div id="users" class="users-list">
+      <!-- List of connected users will appear here -->
+    </div>
+  </div>
+
+  <script src="https://cdn.socket.io/socket.io-3.1.3.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
